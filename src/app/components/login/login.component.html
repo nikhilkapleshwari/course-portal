@@ -1,0 +1,68 @@
+<!-- <mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title *ngIf="!isLoggedIn()">Login</mat-card-title>
+    <mat-card-title *ngIf="isLoggedIn()">Logged in as admin</mat-card-title>
+  </mat-card-header>
+  <mat-card-content *ngIf="!isLoggedIn()">
+    <form class="example-form">
+      <table class="example-full-width" cellspacing="0">
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+            <input matInput placeholder="Username" [(ngModel)]="username" name="username" required>
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+        <td><mat-form-field class="example-full-width">
+          <input matInput placeholder="Password" [(ngModel)]="password"type="password" name="password" required>
+        </mat-form-field></td>
+      </tr></table>
+    </form>
+    <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+  </mat-card-content>
+  <mat-card-actions *ngIf="!isLoggedIn()">
+    <button mat-raised-button (click)="login()" color="primary">Login</button>
+  </mat-card-actions>
+  
+  &nbsp;<mat-card-content *ngIf="isLoggedIn()">
+    <button mat-raised-button (click)="logout()" color="primary">Logout</button>
+
+  </mat-card-content>
+</mat-card> -->
+
+
+<div class="center-box">
+  <mat-card class="example-card">
+    <mat-card-header *ngIf="!isLoggedIn()">Login</mat-card-header>
+    <mat-card-title *ngIf="isLoggedIn()">Logged in as admin</mat-card-title>
+    <mat-card-content *ngIf="!isLoggedIn()">
+      <form class="example-form">
+        <table class="example-full-width" cellspacing="0">
+          <tr>
+            <td>
+              <mat-form-field class="example-full-width">
+              <input matInput placeholder="Username" [(ngModel)]="username" name="username" required>
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+          <td><mat-form-field class="example-full-width">
+            <input matInput placeholder="Password" [(ngModel)]="password"type="password" name="password" required>
+          </mat-form-field></td>
+        </tr></table>
+      </form>
+
+    </mat-card-content>
+    <mat-card-actions *ngIf="!isLoggedIn()">
+      <button mat-raised-button (click)="login()" color="primary">Login</button>
+    </mat-card-actions>
+
+    &nbsp;<mat-card-content *ngIf="isLoggedIn()">
+      <button mat-raised-button (click)="logout()" color="primary">Logout</button>
+    </mat-card-content>
+  </mat-card>
+  
+</div>
+
+

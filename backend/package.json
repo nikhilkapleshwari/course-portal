@@ -1,0 +1,21 @@
+{
+  "name": "student-portal-backend",
+  "version": "1.0.0",
+  "description": "student portal developed using Angular 8",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Digamber Rawat",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http-errors": "^1.8.0",
+    "mongoose": "^5.5.11"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
